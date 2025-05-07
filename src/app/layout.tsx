@@ -1,5 +1,8 @@
+"use client";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from 'next/script';
 import "./globals.css";
 
 const inter = Inter({
@@ -37,6 +40,20 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         {children}
+        
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-8H6HM4ZFD9"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8H6HM4ZFD9');
+          `}
+        </Script>
       </body>
     </html>
   );
