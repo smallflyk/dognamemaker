@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
     // 在生产构建中忽略TypeScript错误
     ignoreBuildErrors: true,
   },
+  images: {
+    domains: ['images.unsplash.com'],
+  },
 };
 
 export default nextConfig;

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
@@ -29,11 +30,16 @@ const HeroSection = () => {
           <div className="md:w-1/2 relative">
             <div className="bg-white dark:bg-gray-800 p-2 rounded-xl shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-300">
               <div className="aspect-w-4 aspect-h-3 relative w-full h-64 md:h-96 overflow-hidden rounded-lg">
-                {/* This is a placeholder - in real app, you'd have a dog image here */}
-                <div className="absolute inset-0 bg-gradient-to-br from-secondary to-primary opacity-20"></div>
-                <div className="flex items-center justify-center h-full">
-                  <span className="text-lg font-medium text-dark-gray">Your Dog Image Here</span>
+                <div className="relative w-full h-full">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2069&auto=format&fit=crop" 
+                    alt="两只开心的狗狗在路上奔跑" 
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary to-primary opacity-10"></div>
               </div>
             </div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary rounded-full opacity-20 dark:opacity-10"></div>
