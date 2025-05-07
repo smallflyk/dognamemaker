@@ -3,9 +3,19 @@
 import { useState } from 'react';
 import { FiSearch, FiArrowRight } from 'react-icons/fi';
 
+interface NameResult {
+  name: string;
+  popularity: string;
+  gender: string;
+  suitableDogBreeds: string[];
+  nameOrigin: string;
+  personalityTraits: string[];
+  similarNames: string[];
+}
+
 const NameChecker = () => {
   const [dogName, setDogName] = useState('');
-  const [results, setResults] = useState<any>(null);
+  const [results, setResults] = useState<NameResult | null>(null);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
