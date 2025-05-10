@@ -1,0 +1,19 @@
+# 狗狗名字检测工具 (Dog Name Checker)
+
+> 一个专业的工具网站，帮助狗主人为他们的宠物狗选择完美的名字，通过分析名字的流行度、性别适配性和犬种兼容性等因素提供专业建议。
+
+本网站提供全面的狗狗名字分析和建议服务，旨在帮助狗主人做出更好的命名决策，建立更强的宠物连接。
+
+## 核心内容
+- [名字检测工具](https://www.dognamechecker.pro/#check-name)：分析狗狗名字的流行度、性别适配性和推荐犬种
+- [名字库](https://www.dognamechecker.pro/name-library)：浏览流行的狗狗名字，按性别、流行度和类别筛选
+- [命名技巧](https://www.dognamechecker.pro/dog-naming-tips)：专业的狗狗命名建议、主题推荐和注意事项
+
+## 常用资源
+- [关于我们](https://www.dognamechecker.pro/about)：了解项目背景和工作原理
+- [流行名字推荐](https://www.dognamechecker.pro/name-library)：查看当前最流行的狗狗名字
+
+## 特色功能
+- [性别适配分析](https://www.dognamechecker.pro/#check-name)：判断名字是否适合公狗或母狗
+- [犬种兼容性](https://www.dognamechecker.pro/#check-name)：找到与特定犬种最匹配的名字
+- [相似名字推荐](https://www.dognamechecker.pro/#check-name)：获取与您喜欢的名字相似的替代选项 
