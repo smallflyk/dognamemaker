@@ -4,14 +4,14 @@ import Link from "next/link";
 import { FiSearch, FiFilter, FiChevronDown, FiTag, FiStar, FiTrendingUp } from "react-icons/fi";
 import type { Metadata } from 'next';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro'; // 去掉结尾的斜杠
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
 
 export const metadata: Metadata = {
   title: "Dog Name Library - Browse Popular & Unique Canine Names",
   description: "Browse dog names sorted by popularity, gender, and style. Find trending, classic, and unique options for your canine with our easy search filters.",
   keywords: ['dog name library', 'pet names', 'popular dog names', 'dog naming ideas', 'dog name search', 'Dog Name Checker'],
   alternates: {
-    canonical: `${BASE_URL}/name-library`,
+    canonical: `${BASE_URL}name-library`,
   },
 };
 
@@ -123,26 +123,26 @@ export default function NameLibraryPage() {
           
           <div className="mb-12">
             <h2 className="text-3xl font-bold mb-6 text-center">Popular Dog Names</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-              {dogNames.map((nameData, index) => (
-                <Link 
-                  key={index} 
-                  href={`/#check-name`}  // In a real app, this would link to a name detail page
-                  className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow"
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            {dogNames.map((nameData, index) => (
+              <Link 
+                key={index} 
+                href={`/#check-name`}  // In a real app, this would link to a name detail page
+                className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow"
                   title={`Check Dog Name: ${nameData.name}`}
-                >
-                  <h3 className="text-xl font-semibold mb-2">{nameData.name}</h3>
-                  <div className="flex flex-col text-sm">
-                    <span className={`${
-                      nameData.gender === 'male' ? 'text-blue-500' : 
-                      nameData.gender === 'female' ? 'text-pink-500' : 'text-purple-500'
-                    } mb-1`}>
-                      {nameData.gender.charAt(0).toUpperCase() + nameData.gender.slice(1)}
-                    </span>
-                    <span className="text-dark-gray">{nameData.popularity}</span>
-                  </div>
-                </Link>
-              ))}
+              >
+                <h3 className="text-xl font-semibold mb-2">{nameData.name}</h3>
+                <div className="flex flex-col text-sm">
+                  <span className={`${
+                    nameData.gender === 'male' ? 'text-blue-500' : 
+                    nameData.gender === 'female' ? 'text-pink-500' : 'text-purple-500'
+                  } mb-1`}>
+                    {nameData.gender.charAt(0).toUpperCase() + nameData.gender.slice(1)}
+                  </span>
+                  <span className="text-dark-gray">{nameData.popularity}</span>
+                </div>
+              </Link>
+            ))}
             </div>
           </div>
           
@@ -220,26 +220,26 @@ export default function NameLibraryPage() {
               Still looking for the perfect name? Use our pagination to explore more options or try our name checker tool.
             </p>
             <div className="flex justify-center">
-              <div className="flex items-center gap-2">
-                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
-                  &lt;
-                </button>
-                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white">
-                  1
-                </button>
-                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
-                  2
-                </button>
-                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
-                  3
-                </button>
-                <span className="mx-2">...</span>
-                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
-                  10
-                </button>
-                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
-                  &gt;
-                </button>
+            <div className="flex items-center gap-2">
+              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
+                &lt;
+              </button>
+              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white">
+                1
+              </button>
+              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
+                2
+              </button>
+              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
+                3
+              </button>
+              <span className="mx-2">...</span>
+              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
+                10
+              </button>
+              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
+                &gt;
+              </button>
               </div>
             </div>
           </div>
