@@ -12,7 +12,7 @@ import Script from 'next/script';
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
 
 export const metadata: Metadata = {
-  title: "Dog Name Checker - Smart Naming for Your Beloved Canine",
+  title: "Dog Name Checker | Find Your Perfect Canine Name",
   description: "The Dog Name Checker helps you choose the perfect name for your furry friend. Analyze popularity, gender suitability, breed compatibility, and get expert naming advice.",
   keywords: ['dog name', 'dog name checker', 'pet name', 'dog naming tool', 'puppy name', 'dog name ideas', 'name your dog'],
   alternates: {
