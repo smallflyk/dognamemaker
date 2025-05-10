@@ -8,10 +8,11 @@ import PopularNamesSection from "@/components/PopularNamesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.yourdomain.com'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
 
 export const metadata: Metadata = {
-  title: "Home", // Will be templated to "Home - Dog Name Checker"
+  title: "Dog Name Checker: Find the Perfect Name for Your Pup",
+  description: "Our Dog Name Checker analyzes popularity, gender, and breed suitability. Find the perfect, unique name for your puppy with our expert insights and naming tool.",
   alternates: {
     canonical: `${BASE_URL}/`,
   },

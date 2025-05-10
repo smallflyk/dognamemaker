@@ -4,12 +4,12 @@ import Link from "next/link";
 import { FiSearch, FiFilter, FiChevronDown, FiTag, FiStar, FiTrendingUp } from "react-icons/fi";
 import type { Metadata } from 'next';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.yourdomain.com'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
 
 export const metadata: Metadata = {
-  title: 'Dog Name Library - Discover Popular Dog Names',
-  description: 'Browse our extensive dog name library. Filter by gender, popularity, and category to find the perfect name for your canine companion. Detailed name information and meanings provided.',
-  keywords: ['dog name library', 'pet names', 'popular dog names', 'dog naming ideas', 'dog name search'],
+  title: "Dog Name Library & Checker | Browse Popular & Unique Names",
+  description: "Explore the Dog Name Checker library for popular, unique, and trending puppy names. Filter by gender, style, and use our checker for detailed insights on your favorites.",
+  keywords: ['dog name library', 'pet names', 'popular dog names', 'dog naming ideas', 'dog name search', 'Dog Name Checker'],
   alternates: {
     canonical: `${BASE_URL}/name-library`,
   },

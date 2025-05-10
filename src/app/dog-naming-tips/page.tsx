@@ -6,12 +6,12 @@ import { FiCheck, FiX } from "react-icons/fi";
 import { Metadata } from 'next';
 import { FiCheckCircle, FiAlertTriangle, FiHeart, FiEdit } from 'react-icons/fi';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.yourdomain.com'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
 
 export const metadata: Metadata = {
-  title: 'Dog Naming Tips - Expert Advice for Naming Your Puppy',
-  description: 'Get expert dog naming advice and best practices. Learn about naming themes, taboos, and considerations to choose a unique and suitable name for your furry friend.',
-  keywords: ['dog naming tips', 'pet naming advice', 'puppy names', 'naming taboos', 'pet naming guide'],
+  title: "Dog Naming Tips & Advice | Expert Dog Name Checker Guide",
+  description: "Get expert advice with Dog Name Checker's naming tips. Learn do's & don'ts, find themes, and choose a suitable, unique name that you and your puppy will love.",
+  keywords: ['dog naming tips', 'pet naming advice', 'puppy names', 'naming taboos', 'pet naming guide', 'Dog Name Checker'],
   alternates: {
     canonical: `${BASE_URL}/dog-naming-tips`,
   },

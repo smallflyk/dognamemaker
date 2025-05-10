@@ -4,12 +4,12 @@ import CTASection from "@/components/CTASection";
 import Link from "next/link";
 import type { Metadata } from 'next';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.yourdomain.com'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
 
 export const metadata: Metadata = {
-  title: 'About Us - Dog Name Checker',
-  description: 'Learn about the Dog Name Checker project background, how it works, and our commitment. We are dedicated to helping you choose the perfect name for your beloved dog.',
-  keywords: ['dog names', 'pet naming', 'about us', 'project introduction', 'dog naming tool'],
+  title: "About Our Dog Name Checker | Mission & How It Works",
+  description: "Discover the story behind Dog Name Checker. Learn about our mission to help pet owners, how our name analysis tool works, and our commitment to finding the perfect dog names.",
+  keywords: ['dog names', 'pet naming', 'about us', 'project introduction', 'dog naming tool', 'Dog Name Checker'],
   alternates: {
     canonical: `${BASE_URL}/about`,
   },
