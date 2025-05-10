@@ -54,6 +54,7 @@ const PopularNamesSection = () => {
           <Link 
             href="/name-library" 
             className="btn-primary inline-flex items-center"
+            title="Explore More Dog Names - Complete Name Library"
           >
             Explore More Names
             <FiArrowRight className="ml-2" />

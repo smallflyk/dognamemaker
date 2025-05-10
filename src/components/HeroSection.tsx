@@ -15,12 +15,13 @@ const HeroSection = () => {
               Check if your dog's name is perfect for them - analyze popularity, gender suitability, and breed compatibility with our advanced dog name checker tool.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/#check-name" className="btn-primary text-center">
+              <Link href="/#check-name" className="btn-primary text-center" title="Try Dog Name Checker - Free Dog Name Analysis Tool">
                 Try Dog Name Checker
               </Link>
               <Link
                 href="/name-library"
                 className="btn-secondary text-center"
+                title="Browse Dog Name Library - Find Popular & Unique Names"
               >
                 Browse Name Library
               </Link>

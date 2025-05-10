@@ -15,6 +15,7 @@ const CTASection = () => {
           <Link
             href="/#check-name"
             className="bg-white text-primary hover:bg-opacity-90 transition-colors px-8 py-4 rounded-lg font-semibold text-lg flex items-center justify-center"
+            title="Check a Dog Name Now - Free Name Analysis Tool"
           >
             Check a Name Now
             <FiArrowRight className="ml-2" />
@@ -22,6 +23,7 @@ const CTASection = () => {
           <Link
             href="/name-library"
             className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-colors px-8 py-4 rounded-lg font-semibold text-lg flex items-center justify-center"
+            title="Browse Dog Name Library - Explore Our Collection of Pet Names"
           >
             Browse Name Library
           </Link>
