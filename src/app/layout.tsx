@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.dognamechecker.pro'), // 更新为实际域名
   title: {
     default: "Dog Name Checker - Smart Naming for Your Beloved Canine",
-    template: "%s - Dog Name Checker",
+    template: "%s",
   },
   description: "The Dog Name Checker helps you choose the perfect name for your furry friend. Analyze popularity, gender suitability, breed compatibility, and get expert naming advice.",
   keywords: ["dog name checker", "dog name finder", "pet name tool", "dog name ideas", "name your dog", "puppy names", "dog name popularity", "dog name compatibility"],
