@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: "Dog Name Checker - Find Your Perfect Canine Name",
     template: "%s",
   },
-  description: "Find the perfect name for your dog with our smart name checker tool. Analyze popularity, gender fit, and breed compatibility.",
+  description: "Find the perfect name for your dog with our smart name checker tool. Analyze popularity, gender fit, and breed compatibility to choose a name you'll both love.",
   keywords: ["dog name checker", "dog name finder", "pet name tool", "dog name ideas", "name your dog", "puppy names", "dog name popularity", "dog name compatibility"],
   robots: "index, follow",
   openGraph: {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@DogNameChecker", // 您的Twitter用户名
     title: "Dog Name Checker - Find Your Perfect Canine Name",
-    description: "Find the perfect name for your dog with our smart name checker tool based on popularity, gender fit, and breed compatibility.",
+    description: "Find the perfect name for your dog with our smart name checker tool. Analyze popularity, gender fit, and breed compatibility for ideal results.",
     images: ["https://www.dognamechecker.pro/og-image.jpg"], // 确保此图片存在于public目录
   },
   alternates: {
