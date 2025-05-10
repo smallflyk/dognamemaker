@@ -129,6 +129,7 @@ export default function NameLibraryPage() {
                   key={index} 
                   href={`/#check-name`}  // In a real app, this would link to a name detail page
                   className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow"
+                  title={`Check Dog Name: ${nameData.name}`}
                 >
                   <h3 className="text-xl font-semibold mb-2">{nameData.name}</h3>
                   <div className="flex flex-col text-sm">
@@ -186,7 +187,11 @@ export default function NameLibraryPage() {
               <p className="text-dark-gray mb-4">
                 Popular male dog names tend to be short, strong-sounding, and easy to call out. Our dog name checker can help you find the perfect masculine name.
               </p>
-              <Link href="/#check-name" className="text-primary font-semibold hover:underline">
+              <Link 
+                href="/#check-name" 
+                className="text-primary font-semibold hover:underline"
+                title="Check a Male Dog Name"
+              >
                 Check a male dog name →
               </Link>
             </div>
@@ -196,7 +201,11 @@ export default function NameLibraryPage() {
               <p className="text-dark-gray mb-4">
                 Female dog names are often melodic, elegant, and sweet-sounding. Use our dog name checker to find a name that reflects your female dog's personality.
               </p>
-              <Link href="/#check-name" className="text-primary font-semibold hover:underline">
+              <Link 
+                href="/#check-name" 
+                className="text-primary font-semibold hover:underline"
+                title="Check a Female Dog Name"
+              >
                 Check a female dog name →
               </Link>
             </div>
@@ -206,7 +215,11 @@ export default function NameLibraryPage() {
               <p className="text-dark-gray mb-4">
                 Some names work particularly well with certain dog breeds. Our dog name checker analyzes breed compatibility to help you find the perfect match.
               </p>
-              <Link href="/#check-name" className="text-primary font-semibold hover:underline">
+              <Link 
+                href="/#check-name" 
+                className="text-primary font-semibold hover:underline"
+                title="Find Breed-Specific Dog Names"
+              >
                 Find breed-specific names →
               </Link>
             </div>

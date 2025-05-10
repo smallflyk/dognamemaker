@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="fixed w-full top-0 bg-white bg-opacity-95 shadow-sm z-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center" title="Dog Name Checker - Home">
           <span className="text-2xl font-bold text-primary">
             <span className="text-secondary">Dog</span> Name Checker
           </span>
@@ -29,30 +29,35 @@ const Header = () => {
           <Link 
             href="/" 
             className="text-dark-gray hover:text-primary transition-colors"
+            title="Dog Name Checker - Home"
           >
             Home
           </Link>
           <Link 
             href="/name-library" 
             className="text-dark-gray hover:text-primary transition-colors"
+            title="Dog Name Library - Browse Popular & Unique Canine Names"
           >
             Name Library
           </Link>
           <Link 
             href="/dog-naming-tips" 
             className="text-dark-gray hover:text-primary transition-colors"
+            title="Dog Naming Tips - Expert Guide for Pet Names"
           >
             Naming Tips
           </Link>
           <Link 
             href="/about" 
             className="text-dark-gray hover:text-primary transition-colors"
+            title="About Dog Name Checker - Our Story & Mission"
           >
             About
           </Link>
           <Link 
             href="/#check-name" 
             className="btn-primary"
+            title="Check Your Dog Name - Free Name Analysis Tool"
           >
             Check a Name
           </Link>
@@ -66,6 +71,7 @@ const Header = () => {
                 href="/" 
                 className="py-2 text-dark-gray hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                title="Dog Name Checker - Home"
               >
                 Home
               </Link>
@@ -73,6 +79,7 @@ const Header = () => {
                 href="/name-library" 
                 className="py-2 text-dark-gray hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                title="Dog Name Library - Browse Popular & Unique Canine Names"
               >
                 Name Library
               </Link>
@@ -80,6 +87,7 @@ const Header = () => {
                 href="/dog-naming-tips" 
                 className="py-2 text-dark-gray hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                title="Dog Naming Tips - Expert Guide for Pet Names"
               >
                 Naming Tips
               </Link>
@@ -87,6 +95,7 @@ const Header = () => {
                 href="/about" 
                 className="py-2 text-dark-gray hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                title="About Dog Name Checker - Our Story & Mission"
               >
                 About
               </Link>
@@ -94,6 +103,7 @@ const Header = () => {
                 href="/#check-name" 
                 className="mt-2 py-2 text-center bg-primary text-white rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
+                title="Check Your Dog Name - Free Name Analysis Tool"
               >
                 Check a Name
               </Link>

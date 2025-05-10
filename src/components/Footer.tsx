@@ -16,16 +16,16 @@ const Footer = () => {
               The ultimate tool to help you find the perfect name for your canine companion.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray hover:text-primary transition-colors">
+              <a href="#" className="text-gray hover:text-primary transition-colors" title="Follow Dog Name Checker on Instagram">
                 <FiInstagram size={20} />
               </a>
-              <a href="#" className="text-gray hover:text-primary transition-colors">
+              <a href="#" className="text-gray hover:text-primary transition-colors" title="Follow Dog Name Checker on Twitter">
                 <FiTwitter size={20} />
               </a>
-              <a href="#" className="text-gray hover:text-primary transition-colors">
+              <a href="#" className="text-gray hover:text-primary transition-colors" title="Follow Dog Name Checker on Facebook">
                 <FiFacebook size={20} />
               </a>
-              <a href="#" className="text-gray hover:text-primary transition-colors">
+              <a href="#" className="text-gray hover:text-primary transition-colors" title="Contact Dog Name Checker via Email">
                 <FiMail size={20} />
               </a>
             </div>
@@ -35,22 +35,22 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-dark-gray hover:text-primary transition-colors">
+                <Link href="/" className="text-dark-gray hover:text-primary transition-colors" title="Dog Name Checker - Home">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/name-library" className="text-dark-gray hover:text-primary transition-colors">
+                <Link href="/name-library" className="text-dark-gray hover:text-primary transition-colors" title="Dog Name Library - Browse Popular & Unique Canine Names">
                   Name Library
                 </Link>
               </li>
               <li>
-                <Link href="/dog-naming-tips" className="text-dark-gray hover:text-primary transition-colors">
+                <Link href="/dog-naming-tips" className="text-dark-gray hover:text-primary transition-colors" title="Dog Naming Tips - Expert Guide for Pet Names">
                   Naming Tips
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-dark-gray hover:text-primary transition-colors">
+                <Link href="/about" className="text-dark-gray hover:text-primary transition-colors" title="About Dog Name Checker - Our Story & Mission">
                   About Us
                 </Link>
               </li>
@@ -61,27 +61,27 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Dog Name Resources</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/name-library?category=popular" className="text-dark-gray hover:text-primary transition-colors">
+                <Link href="/name-library?category=popular" className="text-dark-gray hover:text-primary transition-colors" title="Popular Dog Names - Top Trending Pet Names">
                   Popular Dog Names
                 </Link>
               </li>
               <li>
-                <Link href="/name-library?category=unique" className="text-dark-gray hover:text-primary transition-colors">
+                <Link href="/name-library?category=unique" className="text-dark-gray hover:text-primary transition-colors" title="Unique Dog Names - Distinctive Pet Name Ideas">
                   Unique Dog Names
                 </Link>
               </li>
               <li>
-                <Link href="/name-library?gender=male" className="text-dark-gray hover:text-primary transition-colors">
+                <Link href="/name-library?gender=male" className="text-dark-gray hover:text-primary transition-colors" title="Male Dog Names - Popular Names for Boy Dogs">
                   Male Dog Names
                 </Link>
               </li>
               <li>
-                <Link href="/name-library?gender=female" className="text-dark-gray hover:text-primary transition-colors">
+                <Link href="/name-library?gender=female" className="text-dark-gray hover:text-primary transition-colors" title="Female Dog Names - Popular Names for Girl Dogs">
                   Female Dog Names
                 </Link>
               </li>
               <li>
-                <Link href="/name-library?category=breeds" className="text-dark-gray hover:text-primary transition-colors">
+                <Link href="/name-library?category=breeds" className="text-dark-gray hover:text-primary transition-colors" title="Breed-Specific Dog Names - Names Suited to Different Breeds">
                   Breed-Specific Names
                 </Link>
               </li>
@@ -93,7 +93,7 @@ const Footer = () => {
             <p className="text-dark-gray mb-4">
               Our dog name checker tool uses advanced algorithms to analyze the popularity, gender suitability, and breed compatibility of thousands of dog names.
             </p>
-            <Link href="/#check-name" className="btn-primary inline-block">
+            <Link href="/#check-name" className="btn-primary inline-block" title="Try Our Dog Name Checker Tool">
               Try it Now
             </Link>
           </div>
@@ -105,13 +105,13 @@ const Footer = () => {
               &copy; {currentYear} Dog Name Checker. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link href="/privacy-policy" className="text-dark-gray hover:text-primary text-sm transition-colors">
+              <Link href="/privacy-policy" className="text-dark-gray hover:text-primary text-sm transition-colors" title="Dog Name Checker Privacy Policy">
                 Privacy Policy
               </Link>
-              <Link href="/terms-of-service" className="text-dark-gray hover:text-primary text-sm transition-colors">
+              <Link href="/terms-of-service" className="text-dark-gray hover:text-primary text-sm transition-colors" title="Dog Name Checker Terms of Service">
                 Terms of Service
               </Link>
-              <Link href="/contact" className="text-dark-gray hover:text-primary text-sm transition-colors">
+              <Link href="/contact" className="text-dark-gray hover:text-primary text-sm transition-colors" title="Contact Dog Name Checker">
                 Contact Us
               </Link>
             </div>
