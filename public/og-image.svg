@@ -1,1 +1,23 @@
- 
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="#f8f9fa"/>
+  
+  <!-- 装饰元素 -->
+  <rect x="0" y="0" width="1200" height="10" fill="#3b82f6"/>
+  <rect x="0" y="620" width="1200" height="10" fill="#3b82f6"/>
+  
+  <!-- 圆形装饰 -->
+  <circle cx="200" cy="315" r="150" fill="#3b82f6" opacity="0.1"/>
+  <circle cx="1000" cy="315" r="150" fill="#3b82f6" opacity="0.1"/>
+  
+  <!-- 狗图标 -->
+  <path d="M650 200 C650 200, 700 180, 750 200 C800 220, 800 280, 750 300 C700 320, 650 300, 650 200 Z" fill="#3b82f6" opacity="0.8"/>
+  <circle cx="675" cy="225" r="10" fill="white"/>
+  <path d="M650 250 C650 250, 625 275, 600 250" stroke="#3b82f6" stroke-width="8" fill="none"/>
+  
+  <!-- 标题文本 -->
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="60" font-weight="bold" text-anchor="middle" fill="#111827">Dog Name Checker</text>
+  
+  <!-- 副标题文本 -->
+  <text x="600" y="440" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#4b5563">Find Your Perfect Canine Name</text>
+</svg> 

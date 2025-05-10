@@ -9,8 +9,8 @@ import { FiCheckCircle, FiAlertTriangle, FiHeart, FiEdit } from 'react-icons/fi'
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
 
 export const metadata: Metadata = {
-  title: "Dog Naming Tips | Expert Guide for Pet Names",
-  description: "Expert tips for naming your dog. Learn best practices, avoid common mistakes, and discover creative themes to find a name that perfectly suits your pet.",
+  title: "Dog Naming Tips - Expert Guide for Pet Names",
+  description: "Expert tips for naming your dog. Learn best practices, avoid mistakes, and discover creative themes for the perfect pet name.",
   keywords: ['dog naming tips', 'pet naming advice', 'puppy names', 'naming taboos', 'pet naming guide', 'Dog Name Checker'],
   alternates: {
     canonical: `${BASE_URL}/dog-naming-tips`,

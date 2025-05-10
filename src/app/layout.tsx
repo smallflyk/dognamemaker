@@ -14,15 +14,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.dognamechecker.pro'), // 更新为实际域名
   title: {
-    default: "Dog Name Checker - Smart Naming for Your Beloved Canine",
+    default: "Dog Name Checker - Find Your Perfect Canine Name",
     template: "%s",
   },
-  description: "Find the perfect name for your dog with our smart name checker. Analyze popularity, gender fit, and breed compatibility to choose an ideal name.",
+  description: "Find the perfect name for your dog with our smart name checker tool. Analyze popularity, gender fit, and breed compatibility.",
   keywords: ["dog name checker", "dog name finder", "pet name tool", "dog name ideas", "name your dog", "puppy names", "dog name popularity", "dog name compatibility"],
   robots: "index, follow",
   openGraph: {
-    title: "Dog Name Checker - The Ultimate Tool for Naming Your Dog",
-    description: "Our Dog Name Checker helps you find the perfect name for your canine companion. Check popularity, gender fit, and breed compatibility for any dog name.",
+    title: "Dog Name Checker - Find Your Perfect Canine Name",
+    description: "Our Dog Name Checker helps you find the perfect name for your canine companion based on popularity, gender fit, and breed compatibility.",
     url: "https://www.dognamechecker.pro", // 更新为实际域名
     siteName: "Dog Name Checker",
     locale: "en_US",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@DogNameChecker", // 您的Twitter用户名
-    title: "Dog Name Checker | Find the Perfect Name",
-    description: "Use our Dog Name Checker to find the perfect name for your canine companion. Explore popular names, get naming tips, and ensure your chosen name is a great fit.",
+    title: "Dog Name Checker - Find Your Perfect Canine Name",
+    description: "Find the perfect name for your dog with our smart name checker tool based on popularity, gender fit, and breed compatibility.",
     images: ["https://www.dognamechecker.pro/og-image.jpg"], // 确保此图片存在于public目录
   },
   alternates: {

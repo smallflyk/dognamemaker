@@ -7,8 +7,8 @@ import type { Metadata } from 'next';
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
 
 export const metadata: Metadata = {
-  title: "Dog Name Library | Popular & Unique Canine Names",
-  description: "Browse our collection of dog names sorted by popularity, gender, and style. Find the perfect name for your pet using filters and our dog name checker tool.",
+  title: "Dog Name Library - Browse Popular & Unique Canine Names",
+  description: "Browse our collection of dog names sorted by popularity, gender, and style. Find the perfect name for your pet with our easy filters.",
   keywords: ['dog name library', 'pet names', 'popular dog names', 'dog naming ideas', 'dog name search', 'Dog Name Checker'],
   alternates: {
     canonical: `${BASE_URL}/name-library`,
@@ -61,18 +61,18 @@ export default function NameLibraryPage() {
     <main>
       <Header />
       
-      <section className="pt-32 pb-16 bg-gradient-to-b from-primary/10 to-white dark:from-primary/5 dark:to-gray-900">
+      <section className="pt-32 pb-4 bg-gradient-to-b from-primary/10 to-white dark:from-primary/5 dark:to-gray-900">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Dog Name Library</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Dog Name Library</h1>
           <p className="text-xl text-dark-gray max-w-3xl mx-auto">
             Browse our extensive collection of dog names. Find the perfect name for your canine companion with our dog name checker tool.
           </p>
         </div>
       </section>
       
-      <section className="section bg-white dark:bg-gray-900">
+      <section className="py-6 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
-          <div className="mb-12">
+          <div className="mb-8">
             <h2 className="text-3xl font-bold mb-6 text-center">Browse Our Dog Name Collection</h2>
             <div className="flex flex-col md:flex-row gap-4 mb-8">
               <div className="flex-1 relative">
@@ -121,7 +121,7 @@ export default function NameLibraryPage() {
             </div>
           </div>
           
-          <div className="mb-8">
+          <div className="mb-12">
             <h2 className="text-3xl font-bold mb-6 text-center">Popular Dog Names</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {dogNames.map((nameData, index) => (
@@ -146,27 +146,101 @@ export default function NameLibraryPage() {
             </div>
           </div>
           
-          <div className="mt-12 flex justify-center">
-            <div className="flex items-center gap-2">
-              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
-                &lt;
-              </button>
-              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white">
-                1
-              </button>
-              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
-                2
-              </button>
-              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
-                3
-              </button>
-              <span className="mx-2">...</span>
-              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
-                10
-              </button>
-              <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
-                &gt;
-              </button>
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-center">Dog Name Categories</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-light-gray dark:bg-gray-800 p-6 rounded-lg">
+                <h3 className="text-2xl font-semibold mb-4">Search by Gender</h3>
+                <p className="text-dark-gray mb-4">Choose names specifically selected for male or female dogs, or explore our unisex options.</p>
+                <div className="flex flex-wrap gap-3">
+                  <Link 
+                    href="/name-library?gender=male" 
+                    className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                    title="Browse Male Dog Names"
+                  >
+                    Male Names
+                  </Link>
+                  <Link 
+                    href="/name-library?gender=female" 
+                    className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                    title="Browse Female Dog Names"
+                  >
+                    Female Names
+                  </Link>
+                  <Link 
+                    href="/name-library?gender=unisex" 
+                    className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                    title="Browse Unisex Dog Names"
+                  >
+                    Unisex Names
+                  </Link>
+                </div>
+              </div>
+              
+              <div className="bg-light-gray dark:bg-gray-800 p-6 rounded-lg">
+                <h3 className="text-2xl font-semibold mb-4">Search by Style</h3>
+                <p className="text-dark-gray mb-4">Find dog names that match your preferred style, from classic to trendy, cute to elegant.</p>
+                <div className="flex flex-wrap gap-3">
+                  <Link 
+                    href="/name-library?category=classic" 
+                    className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                    title="Browse Classic Dog Names"
+                  >
+                    Classic
+                  </Link>
+                  <Link 
+                    href="/name-library?category=trendy" 
+                    className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                    title="Browse Trendy Dog Names"
+                  >
+                    Trendy
+                  </Link>
+                  <Link 
+                    href="/name-library?category=unique" 
+                    className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                    title="Browse Unique Dog Names"
+                  >
+                    Unique
+                  </Link>
+                  <Link 
+                    href="/name-library?category=cute" 
+                    className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                    title="Browse Cute Dog Names"
+                  >
+                    Cute
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-8 mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-center">Finding Your Ideal Dog Name</h2>
+            <p className="text-lg text-dark-gray text-center max-w-3xl mx-auto mb-8">
+              Still looking for the perfect name? Use our pagination to explore more options or try our name checker tool.
+            </p>
+            <div className="flex justify-center">
+              <div className="flex items-center gap-2">
+                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
+                  &lt;
+                </button>
+                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white">
+                  1
+                </button>
+                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
+                  2
+                </button>
+                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
+                  3
+                </button>
+                <span className="mx-2">...</span>
+                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
+                  10
+                </button>
+                <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-light-gray dark:bg-gray-700">
+                  &gt;
+                </button>
+              </div>
             </div>
           </div>
         </div>

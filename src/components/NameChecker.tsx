@@ -128,6 +128,8 @@ const NameChecker = () => {
                     key={index}
                     onClick={() => setDogName(name)}
                     className="px-4 py-2 bg-white dark:bg-gray-600 rounded-full hover:bg-primary hover:text-white transition-colors"
+                    title={`Check Dog Name: ${name}`}
+                    aria-label={`Try checking the name ${name} instead`}
                   >
                     {name}
                   </button>

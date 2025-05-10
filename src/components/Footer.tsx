@@ -16,19 +16,39 @@ const Footer = () => {
               The ultimate tool to help you find the perfect name for your canine companion.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray hover:text-primary transition-colors" title="Follow Dog Name Checker on Instagram" aria-label="Follow us on Instagram">
+              <a 
+                href="https://instagram.com/" 
+                className="text-gray hover:text-primary transition-colors" 
+                title="Follow Dog Name Checker on Instagram" 
+                aria-label="Follow us on Instagram"
+              >
                 <span className="sr-only">Instagram</span>
                 <FiInstagram size={20} />
               </a>
-              <a href="#" className="text-gray hover:text-primary transition-colors" title="Follow Dog Name Checker on Twitter" aria-label="Follow us on Twitter">
+              <a 
+                href="https://twitter.com/" 
+                className="text-gray hover:text-primary transition-colors" 
+                title="Follow Dog Name Checker on Twitter" 
+                aria-label="Follow us on Twitter"
+              >
                 <span className="sr-only">Twitter</span>
                 <FiTwitter size={20} />
               </a>
-              <a href="#" className="text-gray hover:text-primary transition-colors" title="Follow Dog Name Checker on Facebook" aria-label="Follow us on Facebook">
+              <a 
+                href="https://facebook.com/" 
+                className="text-gray hover:text-primary transition-colors" 
+                title="Follow Dog Name Checker on Facebook" 
+                aria-label="Follow us on Facebook"
+              >
                 <span className="sr-only">Facebook</span>
                 <FiFacebook size={20} />
               </a>
-              <a href="#" className="text-gray hover:text-primary transition-colors" title="Contact Dog Name Checker via Email" aria-label="Contact us via Email">
+              <a 
+                href="mailto:contact@dognamechecker.pro" 
+                className="text-gray hover:text-primary transition-colors" 
+                title="Contact Dog Name Checker via Email" 
+                aria-label="Contact us via Email"
+              >
                 <span className="sr-only">Email</span>
                 <FiMail size={20} />
               </a>
