@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import HeroSection from "@/components/HeroSection";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,10 +8,12 @@ import PopularNamesSection from "@/components/PopularNamesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.yourdomain.com'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
+
 export const metadata: Metadata = {
   title: "Home", // Will be templated to "Home - Dog Name Checker"
   alternates: {
-    canonical: '/',
+    canonical: `${BASE_URL}/`,
   },
 };
 

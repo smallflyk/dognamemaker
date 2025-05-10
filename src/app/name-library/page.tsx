@@ -2,14 +2,16 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { FiSearch, FiFilter, FiChevronDown, FiTag, FiStar, FiTrendingUp } from "react-icons/fi";
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
+
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.yourdomain.com'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
 
 export const metadata: Metadata = {
   title: 'Dog Name Library - Discover Popular Dog Names',
   description: 'Browse our extensive dog name library. Filter by gender, popularity, and category to find the perfect name for your canine companion. Detailed name information and meanings provided.',
   keywords: ['dog name library', 'pet names', 'popular dog names', 'dog naming ideas', 'dog name search'],
   alternates: {
-    canonical: '/name-library',
+    canonical: `${BASE_URL}/name-library`,
   },
 };
 
