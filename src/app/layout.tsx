@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     images: ["https://www.dognamechecker.pro/og-image.jpg"], // 确保此图片存在于public目录
   },
   alternates: {
-    canonical: 'https://www.dognamechecker.pro', // 更新为完整URL，不含末尾斜杠
+    canonical: 'https://www.dognamechecker.pro/', // 更新为完整URL，首页保留末尾斜杠
   },
 };
 
