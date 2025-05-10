@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000'), // Please change to your actual domain upon deployment
+  metadataBase: new URL('https://www.dognamechecker.pro'), // 更新为实际域名
   title: {
     default: "Dog Name Checker - Smart Naming for Your Beloved Canine",
     template: "%s - Dog Name Checker",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dog Name Checker - The Ultimate Tool for Naming Your Dog",
     description: "Our Dog Name Checker helps you find the perfect name for your canine companion. Check popularity, gender fit, and breed compatibility for any dog name.",
-    url: "https://dognamecheck.com", // Replace with your actual domain
+    url: "https://www.dognamechecker.pro", // 更新为实际域名
     siteName: "Dog Name Checker",
     locale: "en_US",
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description: "Use our Dog Name Checker to find the perfect name for your canine companion. Explore popular names, get naming tips, and ensure your chosen name is a great fit.",
   },
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.dognamechecker.pro', // 更新为完整URL
   },
 };
 

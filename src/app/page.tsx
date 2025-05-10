@@ -7,20 +7,44 @@ import FeaturesSection from "@/components/FeaturesSection";
 import PopularNamesSection from "@/components/PopularNamesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
+import Script from 'next/script';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
 
 export const metadata: Metadata = {
-  title: "Dog Name Checker: Find the Perfect Name for Your Pup",
-  description: "Our Dog Name Checker analyzes popularity, gender, and breed suitability. Find the perfect, unique name for your puppy with our expert insights and naming tool.",
+  title: "Dog Name Checker - Smart Naming for Your Beloved Canine",
+  description: "The Dog Name Checker helps you choose the perfect name for your furry friend. Analyze popularity, gender suitability, breed compatibility, and get expert naming advice.",
+  keywords: ['dog name', 'dog name checker', 'pet name', 'dog naming tool', 'puppy name', 'dog name ideas', 'name your dog'],
   alternates: {
-    canonical: `${BASE_URL}/`,
+    canonical: BASE_URL,
   },
 };
 
 export default function Home() {
   return (
     <main>
+      <Script id="schema-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          'name': 'Dog Name Checker',
+          'url': BASE_URL,
+          'description': 'An advanced tool to help dog owners find the perfect name for their canine companion by analyzing popularity, gender fit, and breed compatibility.',
+          'applicationCategory': 'LifestyleApplication',
+          'offers': {
+            '@type': 'Offer',
+            'price': '0',
+            'priceCurrency': 'USD'
+          },
+          'operatingSystem': 'Web browser',
+          'author': {
+            '@type': 'Organization',
+            'name': 'Dog Name Checker',
+            'url': BASE_URL
+          }
+        })
+      }} />
+      
       <Header />
       
       <HeroSection />
