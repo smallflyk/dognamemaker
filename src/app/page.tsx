@@ -13,7 +13,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker
 
 export const metadata: Metadata = {
   title: "Dog Name Checker - Find Your Perfect Canine Name",
-  description: "Choose the ideal name for your dog with our free name checker tool. Analyze popularity, gender fit, and breed compatibility to find a name that perfectly matches your pet's unique personality and characteristics.",
+  description: "Choose the ideal name for your dog with our free name checker tool. Analyze popularity, gender fit, and breed compatibility for your pet's unique personality.",
   keywords: ['dog name', 'dog name checker', 'pet name', 'dog naming tool', 'puppy name', 'dog name ideas', 'name your dog'],
   alternates: {
     canonical: BASE_URL,
