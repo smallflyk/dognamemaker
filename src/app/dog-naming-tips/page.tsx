@@ -1,10 +1,19 @@
-"use client";
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import Link from "next/link";
 import { FiCheck, FiX } from "react-icons/fi";
+import { Metadata } from 'next';
+import { FiCheckCircle, FiAlertTriangle, FiHeart, FiEdit } from 'react-icons/fi';
+
+export const metadata: Metadata = {
+  title: 'Dog Naming Tips - Expert Advice for Naming Your Puppy',
+  description: 'Get expert dog naming advice and best practices. Learn about naming themes, taboos, and considerations to choose a unique and suitable name for your furry friend.',
+  keywords: ['dog naming tips', 'pet naming advice', 'puppy names', 'naming taboos', 'pet naming guide'],
+  alternates: {
+    canonical: '/dog-naming-tips',
+  },
+};
 
 export default function DogNamingTipsPage() {
   return (

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from 'next/script';
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -10,14 +12,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Dog Name Checker | Find the Perfect Name for Your Canine",
-  description: "Check if your dog's name is perfect for them. Analyze popularity, gender suitability, and breed compatibility. Use our dog name checker to find the ideal name for your furry friend.",
+  metadataBase: new URL('http://localhost:3000'), // Please change to your actual domain upon deployment
+  title: {
+    default: "Dog Name Checker - Smart Naming for Your Beloved Canine",
+    template: "%s - Dog Name Checker",
+  },
+  description: "The Dog Name Checker helps you choose the perfect name for your furry friend. Analyze popularity, gender suitability, breed compatibility, and get expert naming advice.",
   keywords: ["dog name checker", "dog name finder", "pet name tool", "dog name ideas", "name your dog", "puppy names", "dog name popularity", "dog name compatibility"],
   robots: "index, follow",
   openGraph: {
-    title: "Dog Name Checker | The Ultimate Tool for Naming Your Dog",
-    description: "Our dog name checker helps you find the perfect name for your canine companion. Check popularity, gender fit, and breed compatibility for any dog name.",
-    url: "https://dognamecheck.com",
+    title: "Dog Name Checker - The Ultimate Tool for Naming Your Dog",
+    description: "Our Dog Name Checker helps you find the perfect name for your canine companion. Check popularity, gender fit, and breed compatibility for any dog name.",
+    url: "https://dognamecheck.com", // Replace with your actual domain
     siteName: "Dog Name Checker",
     locale: "en_US",
     type: "website",
@@ -25,10 +31,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dog Name Checker | Find the Perfect Name",
-    description: "Our dog name checker helps you find the perfect name for your canine companion.",
+    description: "Use our Dog Name Checker to find the perfect name for your canine companion. Explore popular names, get naming tips, and ensure your chosen name is a great fit.",
   },
   alternates: {
-    canonical: 'https://www.dognamechecker.pro/',
+    canonical: '/',
   },
 };
 

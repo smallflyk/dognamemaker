@@ -1,5 +1,4 @@
-"use client";
-
+import { Metadata } from 'next';
 import HeroSection from "@/components/HeroSection";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,6 +7,13 @@ import FeaturesSection from "@/components/FeaturesSection";
 import PopularNamesSection from "@/components/PopularNamesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
+
+export const metadata: Metadata = {
+  title: "Home", // Will be templated to "Home - Dog Name Checker"
+  alternates: {
+    canonical: '/',
+  },
+};
 
 export default function Home() {
   return (

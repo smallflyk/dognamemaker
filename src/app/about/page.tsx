@@ -1,9 +1,17 @@
-"use client";
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import Link from "next/link";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us - Dog Name Checker',
+  description: 'Learn about the Dog Name Checker project background, how it works, and our commitment. We are dedicated to helping you choose the perfect name for your beloved dog.',
+  keywords: ['dog names', 'pet naming', 'about us', 'project introduction', 'dog naming tool'],
+  alternates: {
+    canonical: '/about',
+  },
+};
 
 export default function AboutPage() {
   return (

@@ -1,9 +1,17 @@
-"use client";
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { FiSearch, FiFilter, FiChevronDown } from "react-icons/fi";
+import { FiSearch, FiFilter, FiChevronDown, FiTag, FiStar, FiTrendingUp } from "react-icons/fi";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dog Name Library - Discover Popular Dog Names',
+  description: 'Browse our extensive dog name library. Filter by gender, popularity, and category to find the perfect name for your canine companion. Detailed name information and meanings provided.',
+  keywords: ['dog name library', 'pet names', 'popular dog names', 'dog naming ideas', 'dog name search'],
+  alternates: {
+    canonical: '/name-library',
+  },
+};
 
 const dogNames = [
   { name: "Max", gender: "male", popularity: "Very High", category: ["popular", "short"] },
