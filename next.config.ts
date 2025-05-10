@@ -14,39 +14,39 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro'
   },
   // 由于我们现在使用middleware.ts处理robots.txt和sitemap.xml，
-  // 所以不需要这些重写规则，但为了安全起见，保留它们作为备份
+  // 所以不需要这些重写规则
   async rewrites() {
     return [];
   },
-  // 添加 headers 配置，确保正确的 content-type
+  // headers配置，中间件将覆盖robots.txt和sitemap.xml的设置
   async headers() {
     return [
-      {
-        source: '/robots.txt',
-        headers: [
-          {
-            key: 'Content-Type',
-            value: 'text/plain',
-          },
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=0, must-revalidate',
-          },
-        ],
-      },
-      {
-        source: '/sitemap.xml',
-        headers: [
-          {
-            key: 'Content-Type',
-            value: 'application/xml',
-          },
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=0, must-revalidate',
-          },
-        ],
-      },
+      // {  // 为 robots.txt 保留此部分作为注释或完全删除
+      //   source: '/robots.txt',
+      //   headers: [
+      //     {
+      //       key: 'Content-Type',
+      //       value: 'text/plain',
+      //     },
+      //     {
+      //       key: 'Cache-Control',
+      //       value: 'public, max-age=0, must-revalidate',
+      //     },
+      //   ],
+      // },
+      // { // 为 sitemap.xml 保留此部分作为注释或完全删除
+      //   source: '/sitemap.xml',
+      //   headers: [
+      //     {
+      //       key: 'Content-Type',
+      //       value: 'application/xml',
+      //     },
+      //     {
+      //       key: 'Cache-Control',
+      //       value: 'public, max-age=0, must-revalidate',
+      //     },
+      //   ],
+      // },
       {
         source: '/llms.txt',
         headers: [
