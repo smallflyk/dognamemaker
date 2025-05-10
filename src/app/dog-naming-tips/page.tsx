@@ -10,7 +10,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker
 
 export const metadata: Metadata = {
   title: "Dog Naming Tips - Expert Guide for Pet Names",
-  description: "Expert tips for naming your dog from professional trainers. Learn best practices, avoid common mistakes, and discover creative themed ideas for your canine friend.",
+  description: "Expert tips for naming your dog from trainers. Learn best practices, avoid mistakes, and find creative themed ideas for your canine friend.",
   keywords: ['dog naming tips', 'pet naming advice', 'puppy names', 'naming taboos', 'pet naming guide', 'Dog Name Checker'],
   alternates: {
     canonical: `${BASE_URL}/dog-naming-tips`,
