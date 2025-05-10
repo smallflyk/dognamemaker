@@ -7,8 +7,8 @@ import type { Metadata } from 'next';
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
 
 export const metadata: Metadata = {
-  title: "Dog Name Library | Browse Popular & Unique Names",
-  description: "Explore the Dog Name Checker library for popular, unique, and trending puppy names. Filter by gender, style, and use our checker for detailed insights on your favorites.",
+  title: "Dog Name Library | Find Popular & Unique Canine Names",
+  description: "Browse our curated collection of dog names. Filter by gender, style, and popularity. Get instant insights on name suitability with our advanced dog name checker tool.",
   keywords: ['dog name library', 'pet names', 'popular dog names', 'dog naming ideas', 'dog name search', 'Dog Name Checker'],
   alternates: {
     canonical: `${BASE_URL}/name-library`,
