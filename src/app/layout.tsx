@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.dognamechecker.pro'), // 更新为实际域名
+  metadataBase: new URL('https://www.dognamechecker.pro'), // 更新为实际域名，不带末尾斜杠
   title: {
     default: "Dog Name Checker - Find Your Perfect Canine Name",
     template: "%s",
