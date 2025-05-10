@@ -9,7 +9,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import Script from 'next/script';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro'; // 请将 'https://www.yourdomain.com' 替换为您的实际域名，或设置 NEXT_PUBLIC_BASE_URL 环境变量
+const BASE_URL = 'https://www.dognamechecker.pro/'; // 确保带有末尾斜杠
 
 export const metadata: Metadata = {
   title: "Dog Name Checker - Find Your Perfect Canine Name",
@@ -28,7 +28,7 @@ export default function Home() {
           '@context': 'https://schema.org',
           '@type': 'WebApplication',
           'name': 'Dog Name Checker',
-          'url': BASE_URL,
+          'url': 'https://www.dognamechecker.pro/', // 修改为与canonical URL一致的格式
           'description': 'An advanced tool to help dog owners find the perfect name for their canine companion by analyzing popularity, gender fit, and breed compatibility.',
           'applicationCategory': 'LifestyleApplication',
           'offers': {
@@ -40,7 +40,7 @@ export default function Home() {
           'author': {
             '@type': 'Organization',
             'name': 'Dog Name Checker',
-            'url': BASE_URL
+            'url': 'https://www.dognamechecker.pro/'
           }
         })
       }} />
