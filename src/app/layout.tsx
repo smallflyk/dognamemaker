@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     title: "Dog Name Checker | Find the Perfect Name",
     description: "Our dog name checker helps you find the perfect name for your canine companion.",
   },
+  alternates: {
+    canonical: 'https://www.dognamechecker.pro/',
+  },
 };
 
 export default function RootLayout({
@@ -36,6 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="canonical" href="https://www.dognamechecker.pro/" />
+      </head>
       <body className={`${inter.variable} antialiased`}>
         {children}
         
