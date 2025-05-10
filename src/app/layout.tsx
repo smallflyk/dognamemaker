@@ -27,11 +27,21 @@ export const metadata: Metadata = {
     siteName: "Dog Name Checker",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://www.dognamechecker.pro/og-image.jpg", // 确保此图片存在于public目录
+        width: 1200,
+        height: 630,
+        alt: "Dog Name Checker - Find the perfect name for your dog",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@DogNameChecker", // 您的Twitter用户名
     title: "Dog Name Checker | Find the Perfect Name",
     description: "Use our Dog Name Checker to find the perfect name for your canine companion. Explore popular names, get naming tips, and ensure your chosen name is a great fit.",
+    images: ["https://www.dognamechecker.pro/og-image.jpg"], // 确保此图片存在于public目录
   },
   alternates: {
     canonical: 'https://www.dognamechecker.pro', // 更新为完整URL
