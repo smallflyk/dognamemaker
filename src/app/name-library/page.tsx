@@ -73,6 +73,7 @@ export default function NameLibraryPage() {
       <section className="section bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-center">Browse Our Dog Name Collection</h2>
             <div className="flex flex-col md:flex-row gap-4 mb-8">
               <div className="flex-1 relative">
                 <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray" />
@@ -120,25 +121,28 @@ export default function NameLibraryPage() {
             </div>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {dogNames.map((nameData, index) => (
-              <Link 
-                key={index} 
-                href={`/#check-name`}  // In a real app, this would link to a name detail page
-                className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow"
-              >
-                <h3 className="text-xl font-semibold mb-2">{nameData.name}</h3>
-                <div className="flex flex-col text-sm">
-                  <span className={`${
-                    nameData.gender === 'male' ? 'text-blue-500' : 
-                    nameData.gender === 'female' ? 'text-pink-500' : 'text-purple-500'
-                  } mb-1`}>
-                    {nameData.gender.charAt(0).toUpperCase() + nameData.gender.slice(1)}
-                  </span>
-                  <span className="text-dark-gray">{nameData.popularity}</span>
-                </div>
-              </Link>
-            ))}
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold mb-6 text-center">Popular Dog Names</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+              {dogNames.map((nameData, index) => (
+                <Link 
+                  key={index} 
+                  href={`/#check-name`}  // In a real app, this would link to a name detail page
+                  className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow"
+                >
+                  <h3 className="text-xl font-semibold mb-2">{nameData.name}</h3>
+                  <div className="flex flex-col text-sm">
+                    <span className={`${
+                      nameData.gender === 'male' ? 'text-blue-500' : 
+                      nameData.gender === 'female' ? 'text-pink-500' : 'text-purple-500'
+                    } mb-1`}>
+                      {nameData.gender.charAt(0).toUpperCase() + nameData.gender.slice(1)}
+                    </span>
+                    <span className="text-dark-gray">{nameData.popularity}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
           
           <div className="mt-12 flex justify-center">
@@ -170,7 +174,7 @@ export default function NameLibraryPage() {
       <section className="section bg-light-gray dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Find the Perfect Dog Name</h2>
+            <h2 className="text-3xl font-bold mb-4">Find Your Dog's Perfect Name Match</h2>
             <p className="text-dark-gray max-w-3xl mx-auto">
               Not sure which name to choose? Use our dog name checker to analyze any name for popularity, gender suitability, and breed compatibility.
             </p>
