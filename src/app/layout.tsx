@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: "Dog Name Checker - Smart Naming for Your Beloved Canine",
     template: "%s",
   },
-  description: "The Dog Name Checker helps you choose the perfect name for your furry friend. Analyze popularity, gender suitability, breed compatibility, and get expert naming advice.",
+  description: "Find the perfect name for your dog with our smart name checker. Analyze popularity, gender fit, and breed compatibility to choose an ideal name.",
   keywords: ["dog name checker", "dog name finder", "pet name tool", "dog name ideas", "name your dog", "puppy names", "dog name popularity", "dog name compatibility"],
   robots: "index, follow",
   openGraph: {

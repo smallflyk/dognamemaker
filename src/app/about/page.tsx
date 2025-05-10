@@ -8,7 +8,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker
 
 export const metadata: Metadata = {
   title: "About Dog Name Checker | Our Story & Mission",
-  description: "Discover the story behind Dog Name Checker. Learn about our mission to help pet owners, how our name analysis tool works, and our commitment to finding the perfect dog names.",
+  description: "Learn about Dog Name Checker's mission to help pet owners find perfect names. Discover our story, how our name analysis tool works, and our commitment to dogs.",
   keywords: ['dog names', 'pet naming', 'about us', 'project introduction', 'dog naming tool', 'Dog Name Checker'],
   alternates: {
     canonical: `${BASE_URL}/about`,

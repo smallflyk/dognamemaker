@@ -8,7 +8,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker
 
 export const metadata: Metadata = {
   title: "Dog Name Library | Popular & Unique Canine Names",
-  description: "Explore the Dog Name Checker library for popular, unique, and trending puppy names. Filter by gender, style, and use our checker for detailed insights on your favorites.",
+  description: "Browse our collection of dog names sorted by popularity, gender, and style. Find the perfect name for your pet using filters and our dog name checker tool.",
   keywords: ['dog name library', 'pet names', 'popular dog names', 'dog naming ideas', 'dog name search', 'Dog Name Checker'],
   alternates: {
     canonical: `${BASE_URL}/name-library`,
