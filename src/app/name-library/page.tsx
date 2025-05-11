@@ -4,19 +4,14 @@ import Link from "next/link";
 import { FiSearch, FiFilter, FiChevronDown, FiTag, FiStar, FiTrendingUp } from "react-icons/fi";
 import type { Metadata } from 'next';
 
-// 确保BASE_URL格式统一
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/';
-// 确保末尾有斜杠
-const canonicalBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
-// 处理页面路径时需要不带斜杠的baseUrl
-const baseUrlNoSlash = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro'; // 更新域名，不带末尾斜杠
 
 export const metadata: Metadata = {
   title: "Dog Name Library - Browse Popular & Unique Canine Names",
   description: "Browse dog names sorted by popularity, gender, and style. Find trending, classic, and unique options for your canine with our easy search filters.",
   keywords: ['dog name library', 'pet names', 'popular dog names', 'dog naming ideas', 'dog name search', 'Dog Name Checker'],
   alternates: {
-    canonical: `${canonicalBaseUrl}name-library/`,
+    canonical: `${BASE_URL}/name-library/`,
   },
 };
 
@@ -159,21 +154,21 @@ export default function NameLibraryPage() {
                 <p className="text-dark-gray mb-4">Choose names specifically selected for male or female dogs, or explore our unisex options.</p>
                 <div className="flex flex-wrap gap-3">
                   <Link 
-                    href="/name-library/?gender=male" 
+                    href="/name-library?gender=male" 
                     className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
                     title="Browse Male Dog Names"
                   >
                     Male Names
                   </Link>
                   <Link 
-                    href="/name-library/?gender=female" 
+                    href="/name-library?gender=female" 
                     className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
                     title="Browse Female Dog Names"
                   >
                     Female Names
                   </Link>
                   <Link 
-                    href="/name-library/?gender=unisex" 
+                    href="/name-library?gender=unisex" 
                     className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
                     title="Browse Unisex Dog Names"
                   >
@@ -187,28 +182,28 @@ export default function NameLibraryPage() {
                 <p className="text-dark-gray mb-4">Find dog names that match your preferred style, from classic to trendy, cute to elegant.</p>
                 <div className="flex flex-wrap gap-3">
                   <Link 
-                    href="/name-library/?category=classic" 
+                    href="/name-library?category=classic" 
                     className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
                     title="Browse Classic Dog Names"
                   >
                     Classic
                   </Link>
                   <Link 
-                    href="/name-library/?category=trendy" 
+                    href="/name-library?category=trendy" 
                     className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
                     title="Browse Trendy Dog Names"
                   >
                     Trendy
                   </Link>
                   <Link 
-                    href="/name-library/?category=unique" 
+                    href="/name-library?category=unique" 
                     className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
                     title="Browse Unique Dog Names"
                   >
                     Unique
                   </Link>
                   <Link 
-                    href="/name-library/?category=cute" 
+                    href="/name-library?category=cute" 
                     className="px-4 py-2 bg-white dark:bg-gray-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
                     title="Browse Cute Dog Names"
                   >
