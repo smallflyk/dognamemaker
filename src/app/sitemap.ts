@@ -2,46 +2,47 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro';
+  const baseUrlNoSlash = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
   
   return [
     {
-      url: `${baseUrl}`,
+      url: `${baseUrlNoSlash}/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: `${baseUrl}/name-library`,
+      url: `${baseUrlNoSlash}/name-library`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/dog-naming-tips`,
+      url: `${baseUrlNoSlash}/dog-naming-tips`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrlNoSlash}/about`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/privacy-policy`,
+      url: `${baseUrlNoSlash}/privacy-policy`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
-      url: `${baseUrl}/terms-of-service`,
+      url: `${baseUrlNoSlash}/terms-of-service`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${baseUrlNoSlash}/contact`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,
