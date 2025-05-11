@@ -11,8 +11,13 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+// 确保基础URL格式统一，带末尾斜杠
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/';
+// 确保末尾有斜杠
+const canonicalBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.dognamechecker.pro/'), // 更新为实际域名，带末尾斜杠
+  metadataBase: new URL(canonicalBaseUrl), // 使用带斜杠的URL
   title: {
     default: "Dog Name Checker - Find Your Perfect Canine Name",
     template: "%s",
@@ -23,13 +28,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dog Name Checker - Find Your Perfect Canine Name",
     description: "Our Dog Name Checker helps you find the perfect name for your canine companion based on popularity, gender fit, and breed compatibility.",
-    url: "https://www.dognamechecker.pro", // 更新为实际域名
+    url: canonicalBaseUrl, // 确保带末尾斜杠
     siteName: "Dog Name Checker",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://www.dognamechecker.pro/og-image.jpg", // 确保此图片存在于public目录
+        url: `${canonicalBaseUrl}og-image.jpg`.replace('//', '/'), // 避免双斜杠
         width: 1200,
         height: 630,
         alt: "Dog Name Checker - Find the perfect name for your dog",
@@ -41,10 +46,10 @@ export const metadata: Metadata = {
     site: "@DogNameChecker", // 您的Twitter用户名
     title: "Dog Name Checker - Find Your Perfect Canine Name",
     description: "Find the perfect name for your dog with our smart name checker tool. Analyze popularity, gender fit, and breed compatibility for ideal results.",
-    images: ["https://www.dognamechecker.pro/og-image.jpg"], // 确保此图片存在于public目录
+    images: [`${canonicalBaseUrl}og-image.jpg`.replace('//', '/')], // 避免双斜杠
   },
   alternates: {
-    canonical: 'https://www.dognamechecker.pro/', // 更新为完整URL，首页保留末尾斜杠
+    canonical: canonicalBaseUrl, // 确保首页canonical URL带末尾斜杠
   },
 };
 
@@ -55,6 +60,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* 添加额外的脚本以确保canonical URL带末尾斜杠 */}
+        <Script id="fix-canonical" strategy="beforeInteractive">
+          {`
+            (function() {
+              var links = document.getElementsByTagName('link');
+              for (var i = 0; i < links.length; i++) {
+                if (links[i].rel === 'canonical' && links[i].href === 'https://www.dognamechecker.pro') {
+                  links[i].href = 'https://www.dognamechecker.pro/';
+                }
+              }
+            })();
+          `}
+        </Script>
+      </head>
       <body className={`${inter.variable} antialiased`}>
         {children}
         
