@@ -9,17 +9,14 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import Script from 'next/script';
 
-// 确保BASE_URL格式统一，添加末尾斜杠，与Vercel配置保持一致
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro';
-// 确保有末尾斜杠
-const canonicalBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const BASE_URL = 'https://www.dognamechecker.pro'; // 确保不带末尾斜杠，让Next.js的规则处理
 
 export const metadata: Metadata = {
   title: "Dog Name Checker - Find Your Perfect Canine Name",
   description: "Choose the ideal name for your dog with our free name checker tool. Analyze popularity, gender fit, and breed compatibility for your pet's unique personality.",
   keywords: ['dog name', 'dog name checker', 'pet name', 'dog naming tool', 'puppy name', 'dog name ideas', 'name your dog'],
   alternates: {
-    canonical: canonicalBaseUrl, // 确保使用带斜杠的URL，与访问URL保持一致
+    canonical: 'https://www.dognamechecker.pro/', // 首页保留末尾斜杠
   },
 };
 
@@ -31,7 +28,7 @@ export default function Home() {
           '@context': 'https://schema.org',
           '@type': 'WebApplication',
           'name': 'Dog Name Checker',
-          'url': canonicalBaseUrl, // 使用带斜杠的URL
+          'url': 'https://www.dognamechecker.pro/', // 带末尾斜杠
           'description': 'An advanced tool to help dog owners find the perfect name for their canine companion by analyzing popularity, gender fit, and breed compatibility.',
           'applicationCategory': 'LifestyleApplication',
           'offers': {
@@ -43,7 +40,7 @@ export default function Home() {
           'author': {
             '@type': 'Organization',
             'name': 'Dog Name Checker',
-            'url': canonicalBaseUrl // 使用带斜杠的URL
+            'url': 'https://www.dognamechecker.pro/'
           }
         })
       }} />
