@@ -64,17 +64,17 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/name-library" className="text-dark-gray hover:text-primary transition-colors" title="Dog Name Library - Browse Popular & Unique Canine Names">
+                <Link href="/name-library/" className="text-dark-gray hover:text-primary transition-colors" title="Dog Name Library - Browse Popular & Unique Canine Names">
                   Name Library
                 </Link>
               </li>
               <li>
-                <Link href="/dog-naming-tips" className="text-dark-gray hover:text-primary transition-colors" title="Dog Naming Tips - Expert Guide for Pet Names">
+                <Link href="/dog-naming-tips/" className="text-dark-gray hover:text-primary transition-colors" title="Dog Naming Tips - Expert Guide for Pet Names">
                   Naming Tips
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-dark-gray hover:text-primary transition-colors" title="About Dog Name Checker - Our Story & Mission">
+                <Link href="/about/" className="text-dark-gray hover:text-primary transition-colors" title="About Dog Name Checker - Our Story & Mission">
                   About Us
                 </Link>
               </li>
@@ -85,27 +85,27 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Dog Name Resources</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/name-library?category=popular" className="text-dark-gray hover:text-primary transition-colors" title="Popular Dog Names - Top Trending Pet Names">
+                <Link href="/name-library/?category=popular" className="text-dark-gray hover:text-primary transition-colors" title="Popular Dog Names - Top Trending Pet Names">
                   Popular Dog Names
                 </Link>
               </li>
               <li>
-                <Link href="/name-library?category=unique" className="text-dark-gray hover:text-primary transition-colors" title="Unique Dog Names - Distinctive Pet Name Ideas">
+                <Link href="/name-library/?category=unique" className="text-dark-gray hover:text-primary transition-colors" title="Unique Dog Names - Distinctive Pet Name Ideas">
                   Unique Dog Names
                 </Link>
               </li>
               <li>
-                <Link href="/name-library?gender=male" className="text-dark-gray hover:text-primary transition-colors" title="Male Dog Names - Popular Names for Boy Dogs">
+                <Link href="/name-library/?gender=male" className="text-dark-gray hover:text-primary transition-colors" title="Male Dog Names - Popular Names for Boy Dogs">
                   Male Dog Names
                 </Link>
               </li>
               <li>
-                <Link href="/name-library?gender=female" className="text-dark-gray hover:text-primary transition-colors" title="Female Dog Names - Popular Names for Girl Dogs">
+                <Link href="/name-library/?gender=female" className="text-dark-gray hover:text-primary transition-colors" title="Female Dog Names - Popular Names for Girl Dogs">
                   Female Dog Names
                 </Link>
               </li>
               <li>
-                <Link href="/name-library?category=breeds" className="text-dark-gray hover:text-primary transition-colors" title="Breed-Specific Dog Names - Names Suited to Different Breeds">
+                <Link href="/name-library/?category=breeds" className="text-dark-gray hover:text-primary transition-colors" title="Breed-Specific Dog Names - Names Suited to Different Breeds">
                   Breed-Specific Names
                 </Link>
               </li>

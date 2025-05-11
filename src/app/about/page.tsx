@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Learn about our mission to help pet owners find perfect dog names. Discover our story, our name analysis tool, and our commitment to your dog.",
   keywords: ['dog names', 'pet naming', 'about us', 'project introduction', 'dog naming tool', 'Dog Name Checker'],
   alternates: {
-    canonical: `${baseUrlNoSlash}/about`,
+    canonical: `${canonicalBaseUrl}about/`,
   },
 };
 

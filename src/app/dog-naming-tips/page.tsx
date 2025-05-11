@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "Expert tips for naming your dog from trainers. Learn best practices, avoid common mistakes, and find creative themed ideas for your new canine friend.",
   keywords: ['dog naming tips', 'pet naming advice', 'puppy names', 'naming taboos', 'pet naming guide', 'Dog Name Checker'],
   alternates: {
-    canonical: `${baseUrlNoSlash}/dog-naming-tips`,
+    canonical: `${canonicalBaseUrl}dog-naming-tips/`,
   },
 };
 

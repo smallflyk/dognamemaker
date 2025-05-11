@@ -34,21 +34,21 @@ const Header = () => {
             Home
           </Link>
           <Link 
-            href="/name-library" 
+            href="/name-library/" 
             className="text-dark-gray hover:text-primary transition-colors"
             title="Dog Name Library - Browse Popular & Unique Canine Names"
           >
             Name Library
           </Link>
           <Link 
-            href="/dog-naming-tips" 
+            href="/dog-naming-tips/" 
             className="text-dark-gray hover:text-primary transition-colors"
             title="Dog Naming Tips - Expert Guide for Pet Names"
           >
             Naming Tips
           </Link>
           <Link 
-            href="/about" 
+            href="/about/" 
             className="text-dark-gray hover:text-primary transition-colors"
             title="About Dog Name Checker - Our Story & Mission"
           >
@@ -76,7 +76,7 @@ const Header = () => {
                 Home
               </Link>
               <Link 
-                href="/name-library" 
+                href="/name-library/" 
                 className="py-2 text-dark-gray hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
                 title="Dog Name Library - Browse Popular & Unique Canine Names"
@@ -84,7 +84,7 @@ const Header = () => {
                 Name Library
               </Link>
               <Link 
-                href="/dog-naming-tips" 
+                href="/dog-naming-tips/" 
                 className="py-2 text-dark-gray hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
                 title="Dog Naming Tips - Expert Guide for Pet Names"
@@ -92,7 +92,7 @@ const Header = () => {
                 Naming Tips
               </Link>
               <Link 
-                href="/about" 
+                href="/about/" 
                 className="py-2 text-dark-gray hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
                 title="About Dog Name Checker - Our Story & Mission"
