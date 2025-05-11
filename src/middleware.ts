@@ -90,26 +90,9 @@ Disallow: /user-content/`;
     });
   }
 
-  // 处理首页请求，确保canonical带有末尾斜杠
-  if (pathname === '/') {
-    // 获取响应
-    const response = NextResponse.next();
-    
-    // 添加X-Robots-Tag响应头
-    response.headers.set('X-Robots-Tag', 'index, follow');
-    
-    // 注: 这种方法在某些情况下可能不适用，因为Next.js的中间件API限制了对响应内容的直接修改
-    // 这里提供一个思路，实际实现可能需要其他方法
-    
-    return response;
-  }
-
-  // 对于其他请求，继续正常处理
-  const response = NextResponse.next();
-  
   // 为所有响应添加X-Robots-Tag
+  const response = NextResponse.next();
   response.headers.set('X-Robots-Tag', 'index, follow');
-  
   return response;
 }
 
