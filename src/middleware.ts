@@ -104,11 +104,31 @@ Disallow: /user-content/`;
     return response;
   }
 
-  // 对于其他请求，继续正常处理
+  // 判断特定路径是否应该noindex
+  const shouldNoIndex = 
+    // API路径
+    pathname.startsWith('/api/') || 
+    // 管理页面
+    pathname.startsWith('/admin/') || 
+    // 预览页面
+    pathname.startsWith('/preview/') ||
+    // 用户内容
+    pathname.startsWith('/user-content/') ||
+    // 搜索结果页面
+    pathname.startsWith('/search') ||
+    // 测试页面
+    pathname.includes('/test-') ||
+    // 名字库分页页面（第2页及以后）
+    (pathname.startsWith('/name-library/') && pathname !== '/name-library/' && !pathname.endsWith('/'));
+
   const response = NextResponse.next();
   
-  // 为所有响应添加X-Robots-Tag
-  response.headers.set('X-Robots-Tag', 'index, follow');
+  // 根据路径设置不同的X-Robots-Tag
+  if (shouldNoIndex) {
+    response.headers.set('X-Robots-Tag', 'noindex, follow');
+  } else {
+    response.headers.set('X-Robots-Tag', 'index, follow');
+  }
   
   return response;
 }

@@ -19,7 +19,17 @@ export const metadata: Metadata = {
   },
   description: "Find the perfect name for your dog with our smart name checker tool. Analyze popularity, gender fit, and breed compatibility to choose a name you'll both love.",
   keywords: ["dog name checker", "dog name finder", "pet name tool", "dog name ideas", "name your dog", "puppy names", "dog name popularity", "dog name compatibility"],
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: "Dog Name Checker - Find Your Perfect Canine Name",
     description: "Our Dog Name Checker helps you find the perfect name for your canine companion based on popularity, gender fit, and breed compatibility.",
