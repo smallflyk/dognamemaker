@@ -9,9 +9,11 @@ const nextConfig: NextConfig = {
     // 在生产构建中忽略TypeScript错误
     ignoreBuildErrors: true,
   },
-  // 配置环境变量，优先使用环境变量中的URL，确保带末尾斜杠与Vercel配置保持一致
+  // 添加trailingSlash配置，确保URL末尾带有斜杠
+  trailingSlash: true,
+  // 配置环境变量，优先使用环境变量中的URL
   env: {
-    NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/'
+    NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro'
   },
   // 由于我们现在使用middleware.ts处理robots.txt和sitemap.xml，
   // 所以不需要这些重写规则
