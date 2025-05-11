@@ -4,14 +4,19 @@ import Link from "next/link";
 import { FiSearch, FiFilter, FiChevronDown, FiTag, FiStar, FiTrendingUp } from "react-icons/fi";
 import type { Metadata } from 'next';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro'; // 更新域名，不带末尾斜杠
+// 确保BASE_URL格式统一
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/';
+// 确保末尾有斜杠
+const canonicalBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+// 处理页面路径时需要不带斜杠的baseUrl
+const baseUrlNoSlash = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
 
 export const metadata: Metadata = {
   title: "Dog Name Library - Browse Popular & Unique Canine Names",
   description: "Browse dog names sorted by popularity, gender, and style. Find trending, classic, and unique options for your canine with our easy search filters.",
   keywords: ['dog name library', 'pet names', 'popular dog names', 'dog naming ideas', 'dog name search', 'Dog Name Checker'],
   alternates: {
-    canonical: `${BASE_URL}/name-library`,
+    canonical: `${baseUrlNoSlash}/name-library`,
   },
 };
 

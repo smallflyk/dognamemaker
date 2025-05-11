@@ -4,14 +4,19 @@ import CTASection from "@/components/CTASection";
 import Link from "next/link";
 import type { Metadata } from 'next';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro'; // 更新域名，不带末尾斜杠
+// 确保BASE_URL格式统一
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dognamechecker.pro/';
+// 确保末尾有斜杠
+const canonicalBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+// 处理页面路径时需要不带斜杠的baseUrl
+const baseUrlNoSlash = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
 
 export const metadata: Metadata = {
   title: "About Dog Name Checker - Our Story & Mission",
   description: "Learn about our mission to help pet owners find perfect dog names. Discover our story, our name analysis tool, and our commitment to your dog.",
   keywords: ['dog names', 'pet naming', 'about us', 'project introduction', 'dog naming tool', 'Dog Name Checker'],
   alternates: {
-    canonical: `${BASE_URL}/about`,
+    canonical: `${baseUrlNoSlash}/about`,
   },
 };
 
